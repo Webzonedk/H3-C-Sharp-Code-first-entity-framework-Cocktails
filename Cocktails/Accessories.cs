@@ -31,9 +31,9 @@ namespace Cocktails
 
         #region constructors
 
-        public Accessories(string name, int amount) : base(name)
+        public Accessories()
         {
-            this.amount = amount;
+          
         }
 
         #endregion

@@ -8,13 +8,16 @@ using System.Data.Entity;
 
 namespace Cocktails
 {
-    class CocktailContext:DbContext
+    class CocktailContext : DbContext
     {
 
         public CocktailContext() : base("name=cocktailDBConnectionString")
         {
             //Database.SetInitializer<CocktailContext>(new CreateDatabaseIfNotExists<CocktailContext>());
-            Database.SetInitializer<CocktailContext>(new DropCreateDatabaseIfModelChanges<CocktailContext>());
+
+            //Database.SetInitializer<CocktailContext>(new DropCreateDatabaseIfModelChanges<CocktailContext>());
+            Database.SetInitializer<CocktailContext>(new CocktailDBInitializer());
+
             //Database.SetInitializer<CocktailContext>(new DropCreateDatabaseAlways<CocktailContext>());
             //Database.SetInitializer<CocktailContext>(new CocktailContext());
         }
@@ -26,7 +29,7 @@ namespace Cocktails
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<Drink> Drinks { get; set; }
 
-         
+
 
 
     }

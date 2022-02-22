@@ -31,9 +31,9 @@ namespace Cocktails
 
         #region constructors
 
-        public Drink(string name, Recipe recipe ):base(name)
+        public Drink()
         {
-            this.recipe = recipe;
+
         }
 
         #endregion

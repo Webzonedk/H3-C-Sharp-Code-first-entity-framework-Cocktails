@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cocktails
 {
-    class Recipe : MotherDrink
+    class Recipe:MotherDrink
     {
 
         #region fields
@@ -16,6 +16,7 @@ namespace Cocktails
         private Glass glassType;
 
         #endregion
+
 
 
         #region properties
@@ -40,13 +41,14 @@ namespace Cocktails
 
         #endregion
 
+
+
         #region constructors
 
-        public Recipe(string name, List<Ingredient> ingredients, List<Accessories> accessories, Glass glassType) : base(name)
+        public Recipe()
         {
-            this.ingredients = ingredients;
-            this.accessories = accessories;
-            this.glassType = glassType;
+            this.ingredients = new List<Ingredient>();
+            this.accessories = new List<Accessories>();
         }
 
         #endregion

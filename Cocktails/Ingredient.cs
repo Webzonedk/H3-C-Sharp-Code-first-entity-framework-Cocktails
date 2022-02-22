@@ -9,6 +9,7 @@ namespace Cocktails
     class Ingredient : MotherDrink
     {
         #region fields
+
         private int amount;
 
         #endregion
@@ -31,9 +32,9 @@ namespace Cocktails
 
         #region constructors
 
-        public Ingredient(string name, int amount):base(name)
+        public Ingredient()
         {
-            this.amount = amount;
+
         }
 
         #endregion
