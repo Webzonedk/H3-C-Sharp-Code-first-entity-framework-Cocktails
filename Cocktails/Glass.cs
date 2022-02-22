@@ -6,7 +6,28 @@ using System.Threading.Tasks;
 
 namespace Cocktails
 {
-    class Glass
+    class Glass: MotherDrink
     {
+
+        #region fields
+
+        #endregion
+
+
+
+        #region properties
+
+        #endregion
+
+
+
+        #region constructors
+
+        public Glass(string name) : base(name)
+        {
+            
+        }
+
+        #endregion
     }
 }

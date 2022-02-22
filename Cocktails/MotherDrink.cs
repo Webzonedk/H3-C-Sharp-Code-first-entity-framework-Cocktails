@@ -8,7 +8,40 @@ namespace Cocktails
 {
     class MotherDrink
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+
+        #region fields
+
+        private int id;
+
+        private string name;
+
+        #endregion
+
+
+        #region properties
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        #endregion
+
+        #region constructors
+        public MotherDrink(string name)
+        {
+            this.name = name;
+        }
+        #endregion
+
     }
 }

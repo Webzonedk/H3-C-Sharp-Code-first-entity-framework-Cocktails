@@ -8,6 +8,21 @@ namespace Cocktails
 {
     class Bartender
     {
-        public Drink MyProperty { get; set; }
+        #region fields
+        
+        #endregion
+
+
+        #region properties
+
+        #endregion
+
+        #region constructors
+        public Bartender()
+        {
+
+        }
+        #endregion
+      
     }
 }
