@@ -54,33 +54,35 @@ namespace Cocktails
                                     i = glasses.Count;
                                     foundMatch = true;
                                 }
-
                             }
                             if (foundMatch==false)
                             {
                                 Console.WriteLine("The glass was not found in the database, please create one");
-                                bartender.CreateGlass(Console.ReadLine());
+                                string glassName = Console.ReadLine();
+                                Glass glass = new Glass() { Name = glassName };
+                                recipe.GlassType = glass;
+                                bartender.CreateGlass(glassName);
                             }
                         }
                         else
                         {
                             Console.WriteLine("There is no glasses in the database, please create one");
-                            
-                            bartender.CreateGlass(Console.ReadLine());
-
+                            string glassName = Console.ReadLine();
+                            Glass glass = new Glass() { Name = glassName };
+                            recipe.GlassType = glass;
+                            bartender.CreateGlass(glassName);
                         }
-
-                        //bool end = false;
-                        //while (!end)
-                        //{
-                        //}
-
-                        Console.WriteLine("the glass has been selected");
-                        Console.ReadKey();
-
+                        Console.WriteLine($"the glass {recipe.GlassType.Name} has been selected");
+                        Console.WriteLine();
+                        //Asking to add ingredients
+                        Console.WriteLine("How many ingredients do you wish to add? (0-9)");
+                        double ingredients = (Char.GetNumericValue(Console.ReadKey(true).KeyChar));
+                        for (int i = 0; i < ingredients; i++)
+                        {
+                            Console.WriteLine("Please add ingredient");
+                        }
+                        //Not yet in use
                         Drink drink = new Drink();
-
-
                         //bartender.CreateDrink(drink);
 
                         break;
