@@ -18,6 +18,7 @@ namespace Cocktails
         #endregion
 
 
+
         #region properties
 
         public int Id
@@ -25,8 +26,6 @@ namespace Cocktails
             get { return id; }
             private set { id = value; }
         }
-
-
 
         public string Name
         {
@@ -36,11 +35,15 @@ namespace Cocktails
 
         #endregion
 
+
+
         #region constructors
+
         public MotherDrink()
         {
            
         }
+
         #endregion
 
     }

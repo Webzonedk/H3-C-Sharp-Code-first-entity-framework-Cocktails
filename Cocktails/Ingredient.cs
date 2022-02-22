@@ -16,7 +16,6 @@ namespace Cocktails
 
 
 
-
         #region properties
 
         public int Amount
@@ -26,7 +25,6 @@ namespace Cocktails
         }
 
         #endregion
-
 
 
 

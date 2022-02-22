@@ -23,12 +23,10 @@ namespace Cocktails
 
         #region constructors
 
-
         public Glass()
         {
 
         }
-
 
         #endregion
     }

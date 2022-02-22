@@ -16,7 +16,7 @@ namespace Cocktails
             IList<Glass> glasses = new List<Glass>();
 
 
-
+            //Applying a few basic glases to begin with
             glasses.Add(new Glass() { Name = "Champagne glass" });
             glasses.Add(new Glass() { Name = "Burgundy glass" });
             glasses.Add(new Glass() { Name = "Bordeaux glass" });

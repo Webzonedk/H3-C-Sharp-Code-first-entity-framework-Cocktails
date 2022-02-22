@@ -24,6 +24,10 @@ namespace Cocktails
                 switch (Console.ReadKey(true).KeyChar)
                 {
                     case '1':
+                        //Searching for all drinks conrtaining this phrase
+                        Console.WriteLine("Type the search phrase");
+                        string phrase = Console.ReadLine();
+                        List<Drink> drinks = bartender.SearchDrink(phrase);
                         break;
                     case '2':
 
@@ -74,6 +78,8 @@ namespace Cocktails
                         }
                         Console.WriteLine($"the glass {recipe.GlassType.Name} has been selected");
                         Console.WriteLine();
+
+
                         //Asking to add ingredients
                         Console.WriteLine("How many ingredients do you wish to add? (0-9)");
                         double ingredients = (Char.GetNumericValue(Console.ReadKey(true).KeyChar));
@@ -81,6 +87,13 @@ namespace Cocktails
                         {
                             Console.WriteLine("Please add ingredient");
                         }
+
+
+
+                        //Asking to add accessories
+
+
+
                         //Not yet in use
                         Drink drink = new Drink();
                         //bartender.CreateDrink(drink);

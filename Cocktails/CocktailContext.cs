@@ -16,6 +16,8 @@ namespace Cocktails
             //Database.SetInitializer<CocktailContext>(new CreateDatabaseIfNotExists<CocktailContext>());
 
             //Database.SetInitializer<CocktailContext>(new DropCreateDatabaseIfModelChanges<CocktailContext>());
+
+            //Using a custom DBinitializer
             Database.SetInitializer<CocktailContext>(new CocktailDBInitializer());
 
             //Database.SetInitializer<CocktailContext>(new DropCreateDatabaseAlways<CocktailContext>());
